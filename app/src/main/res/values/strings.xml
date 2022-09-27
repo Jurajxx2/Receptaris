@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Receptaris</string>
+    <string name="title_recipes">Recipes</string>
+    <string name="title_dashboard">Dashboard</string>
+</resources>
