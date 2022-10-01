@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.trasim.dashboard.ui.dashboard.DashboardFragment"
+        android:label="DashboardFragment" >
+        <action
+            android:id="@+id/openDetail"
+            app:destination="@id/recipeDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recipeListFragment"
+        android:name="com.trasim.recipes.ui.list.RecipeListFragment"
+        android:label="RecipeListFragment" >
+        <action
+            android:id="@+id/openDetail"
+            app:destination="@id/recipeDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteRecipesFragment"
+        android:name="com.trasim.recipes.ui.favourites.FavouriteRecipesFragment"
+        android:label="FavouriteRecipesFragment" >
+        <action
+            android:id="@+id/openDetail"
+            app:destination="@id/recipeDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recipeDetailFragment"
+        android:name="com.trasim.recipes.ui.detail.RecipeDetailFragment"
+        android:label="RecipeDetailFragment" />
+</navigation>

@@ -1,5 +1,8 @@
 package com.trasim.data.model
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class Recipe(
     val recipeId: String,
     val area: String?,

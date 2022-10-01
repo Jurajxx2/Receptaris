@@ -1,7 +1,8 @@
-package com.trasim.receptaris
+package com.trasim.receptaris.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.trasim.receptaris.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

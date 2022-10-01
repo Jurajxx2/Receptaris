@@ -6,8 +6,10 @@ import androidx.room.TypeConverter
 import androidx.room.TypeConverters
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import com.trasim.data.database.dao.CategoriesDao
 import com.trasim.data.database.dao.FavouritesDao
 import com.trasim.data.database.dao.RecipesDao
+import com.trasim.data.model.local.CategoryLocal
 import com.trasim.data.model.local.FavouriteLocal
 import com.trasim.data.model.local.RecipeLocal
 
@@ -16,7 +18,8 @@ const val DATABASE_VERSION = 1
 @Database(
     entities = [
         FavouriteLocal::class,
-        RecipeLocal::class
+        RecipeLocal::class,
+        CategoryLocal::class,
     ],
     version = DATABASE_VERSION,
     exportSchema = true
@@ -27,6 +30,8 @@ abstract class ReceptarisDatabase : RoomDatabase() {
     abstract fun recipesDao(): RecipesDao
 
     abstract fun favouritesDao(): FavouritesDao
+
+    abstract fun categoriesDao(): CategoriesDao
 }
 
 class PropertyTypeConverters {

@@ -1,4 +1,12 @@
 package com.trasim.recipes.ui.list
 
-class RecipeListViewModel {
+import androidx.lifecycle.ViewModel
+import com.trasim.recipes.usecase.GetRecipeByCategoryUseCase
+import com.trasim.recipes.usecase.GetRecipeCategoriesUseCase
+
+class RecipeListViewModel(
+    private val getRecipeCategoriesUseCase: GetRecipeCategoriesUseCase,
+    private val getRecipeByCategoryUseCase: GetRecipeByCategoryUseCase
+) : ViewModel() {
+
 }

@@ -8,6 +8,6 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "favourites")
 data class FavouriteLocal(
     @PrimaryKey(autoGenerate = true)
-    val favouriteId: Int,
+    val favouriteId: Int = 0,
     val recipeReference: String
 )
